@@ -1,6 +1,6 @@
 $(document).ready(function () {
 
-    var topics = ["The Shining", "Empire Strikes Back", "Bladerunner 2049", "Black Panther", "lord of the Rings", "The Matrix", "Ninja Scroll", "Ghost in A Shell"];
+    var topics = ["The Shining", "Empire Strikes Back", "Bladerunner 2049", "Black Panther", "lord of the Rings", "The Matrix", "Ninja Scroll", "Ghost in A Shell", "Tron"];
 
     function displayInfo() {
         var movie = $(this).attr("movie-name");
@@ -21,7 +21,7 @@ $(document).ready(function () {
 
                 var rating = results[i].rating;
                 var pRate = $("<p>").text("Rating: " + rating);
-                var genre = $("<p>").text("Genre: " + genre);
+                // var genre = $("<p>").text("Genre: " + genre);
 
 
                 var urlStill = results[i].images.fixed_height_still.url;
@@ -33,7 +33,7 @@ $(document).ready(function () {
 
                 movieDiv.append(gif);
                 movieDiv.append(pRate);
-                movieDiv.append(genre);
+                // movieDiv.append(genre);
 
 
                 $("#movies").append(movieDiv);
